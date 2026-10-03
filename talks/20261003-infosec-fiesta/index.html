@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OCF x 資安：從 OpenChain 到資安陪伴計畫｜李世國 Amos Li</title>
+<meta name="description" content="2026/10/03 資安社群嘉年華短講：開放文化基金會（OCF）的五大核心、OpenChain 開源合規與安全標準，以及陪伴台灣 NGO 的資安陪伴計畫。">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="canonical" href="https://amosli.tw/talks/20261003-infosec-fiesta/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OCF x 資安：從 OpenChain 到資安陪伴計畫">
+<meta property="og:description" content="2026/10/03 資安社群嘉年華短講投影片與逐頁文字。">
+<meta property="og:image" content="https://amosli.tw/talks/20261003-infosec-fiesta/slides/slide-01.webp">
+<meta property="og:url" content="https://amosli.tw/talks/20261003-infosec-fiesta/">
+<style>
+  .deck { max-width: 1040px; margin: 1.5rem auto 0; padding: 0 16px; }
+  .deck figure { margin: 0; }
+  .deck .frame {
+    position: relative; aspect-ratio: 16 / 9; max-width: 100%;
+    background: #111; border: 1px solid var(--color-border); border-radius: 6px; overflow: hidden;
+  }
+  .deck .frame img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .deck .frame button.hit {
+    position: absolute; top: 0; bottom: 0; width: 35%; border: 0; background: transparent; cursor: pointer;
+  }
+  .deck .frame .hit.prev { left: 0; }
+  .deck .frame .hit.next { right: 0; }
+  .deck .controls {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem;
+    margin-top: .75rem;
+  }
+  .deck .controls button {
+    font: inherit; font-size: 15px; padding: .4rem .9rem; cursor: pointer;
+    color: var(--color-fg); background: var(--color-card);
+    border: 1px solid var(--color-border); border-radius: 4px;
+  }
+  .deck .controls button:hover { border-color: var(--color-green); }
+  .deck .controls button:disabled { opacity: .4; cursor: default; }
+  .deck .counter { font-family: var(--font-mono); font-size: 14px; color: var(--color-muted); }
+  .deck figcaption { margin-top: .5rem; font-size: 15px; color: var(--color-muted); }
+  .deck .frame:fullscreen { border: 0; border-radius: 0; background: #000; }
+  .slides-text { padding-left: 1.4rem; }
+  .slides-text li { margin-bottom: 1.1rem; }
+  .slides-text li strong { display: block; }
+  .slides-text a.jump { font-size: 14px; }
+  .note { font-size: 15px; color: var(--color-muted); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要內容</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">李世國 Amos Li</a>
+    <nav class="site-nav">
+      <a href="/">首頁</a>
+      <a href="/resume/">履歷</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <h1>OCF x 資安：從 OpenChain 到資安陪伴計畫</h1>
+    <p class="lede">2026/10/03・<a href="https://infosec-fiesta.vlab.tw/">資安社群嘉年華</a> 短講・開放文化基金會（OCF）</p>
+    <p>這場短講介紹 OCF 怎麼從開放科技的五大核心出發，走進兩種資安工作：協助企業導入 OpenChain 開源合規與安全標準，以及長期陪伴台灣 NGO 提升防禦能力。投影片可以用鍵盤左右鍵或在手機上左右滑動翻頁，下方附有逐頁文字。</p>
+  </div>
+
+  <section class="deck" aria-label="投影片">
+    <figure>
+      <div class="frame" id="frame">
+        <img id="slide-img" src="slides/slide-01.webp" width="1600" height="900" alt="第 1 頁：OCF x 資安，從 OpenChain 到資安陪伴計畫">
+        <button class="hit prev" type="button" aria-label="上一頁" tabindex="-1"></button>
+        <button class="hit next" type="button" aria-label="下一頁" tabindex="-1"></button>
+      </div>
+      <div class="controls">
+        <button type="button" id="prev">← 上一頁</button>
+        <span class="counter" id="counter" aria-live="polite">1 / 11</span>
+        <span>
+          <button type="button" id="fs">全螢幕</button>
+          <button type="button" id="next">下一頁 →</button>
+        </span>
+      </div>
+      <figcaption id="caption">封面</figcaption>
+    </figure>
+  </section>
+
+  <div class="wrap">
+    <h2>逐頁文字</h2>
+    <ol class="slides-text">
+      <li id="s1"><strong>封面：OCF x 資安</strong>從 OpenChain 到資安陪伴計畫｜資安社群嘉年華 短講分享。</li>
+      <li id="s2"><strong>大綱</strong>OCF 簡介、OpenChain、資安陪伴計畫。</li>
+      <li id="s3"><strong>關於 OCF</strong>OCF 是非營利組織，2014 年創立，支持台灣 30 多個開放科技社群，持續推廣開放科技、參與政策倡議，為眾人的數位人權發聲。這些成果是和科技社群與公民夥伴一起完成的。</li>
+      <li id="s4"><strong>OCF 五大核心領域</strong>開放源碼、開放資料、開放政府、網路自由、數位人權。這五項核心，也正是 OCF 投入資安工作（OpenChain 合規與資安陪伴計畫）的出發點。</li>
+      <li id="s5"><strong>為什麼企業要談開源安全與合規</strong>開源套件已佔企業軟體組成的 98%，授權衝突五年內上升 12%。73% 企業因近期供應鏈攻擊增加資安投入；34% 曾遭遇開源已知漏洞被利用的攻擊（73%、34% 出自 Synopsys OSSRA 2023）。</li>
+      <li id="s6"><strong>OpenChain 是什麼</strong>OpenChain 是兩項 ISO 國際標準：ISO/IEC 5230（開源合規）與 ISO/IEC 18974（開源安全保證）。內容涵蓋角色職責、政策、流程、工具、教育訓練與支持資源，只規範「做什麼」，保留企業彈性。</li>
+      <li id="s7"><strong>OCF 提供的 OpenChain 服務</strong>從落差分析、能力建置到正式認證，陪企業走完整個流程（約 8-13 週）。OCF 已協助企業取得台灣首張 OpenChain ISO/IEC 5230 認證。</li>
+      <li id="s8"><strong>為什麼 OCF 要做資安陪伴計畫</strong>每當發生重大政治事件，NGO 就容易成為攻擊目標，例如 2022 年裴洛西訪台前後。台灣 NGO 普遍資安量能不足；OCF 透過 12 個月的長期陪伴，協助 NGO 建立基本防禦能力。</li>
+      <li id="s9"><strong>真實案例：一起釣魚信，查出是 APT 攻擊</strong>陪伴對象長期面對針對性釣魚信、DDoS 與網路偵蒐，部分攻擊顯示出境外國家級資源介入的痕跡。其中一封冒名 NGO 負責人的連署信，經分析證實是 APT（進階持續性威脅）攻擊。完整分析見<a href="https://ocf.tw/p/defendhrd/">《信任的代價》</a>。</li>
+      <li id="s10"><strong>12 個月陪伴計畫看到的改變</strong>參與組織的資安規範與實務操作顯著提升；受訓 NGO 開始能辨識釣魚攻擊並主動回報。流程包含建立合作、了解資安現況，以及 8 個單元的資安主題課程與期中、期末評估。數位安全資源：<a href="https://security.ocf.tw/">security.ocf.tw</a>。</li>
+      <li id="s11"><strong>結尾</strong>Co-Create the Digital Future.</li>
+    </ol>
+
+    <h2>延伸資源</h2>
+    <ul>
+      <li><a href="https://ocf.tw/">開放文化基金會 OCF</a></li>
+      <li><a href="https://security.ocf.tw/">OCF 數位安全資源</a></li>
+      <li><a href="https://ocf.tw/p/defendhrd/">《信任的代價》技術報告</a></li>
+    </ul>
+    <p class="note">投影片中的新聞截圖與統計圖表版權屬原出處。</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>&copy; 2026 Amos Li</span>
+    <span><a href="https://github.com/a4ltw/amosli.tw">原始碼</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var items = Array.prototype.slice.call(document.querySelectorAll('.slides-text li'));
+  var total = items.length;
+  var titles = items.map(function (li) { return li.querySelector('strong').textContent; });
+  var img = document.getElementById('slide-img');
+  var counter = document.getElementById('counter');
+  var caption = document.getElementById('caption');
+  var prevBtn = document.getElementById('prev');
+  var nextBtn = document.getElementById('next');
+  var frame = document.getElementById('frame');
+  var cur = 1;
+
+  function src(n) { return 'slides/slide-' + (n < 10 ? '0' : '') + n + '.webp'; }
+  function preload(n) { if (n >= 1 && n <= total) { var i = new Image(); i.src = src(n); } }
+
+  function show(n, push) {
+    cur = Math.min(Math.max(n, 1), total);
+    img.src = src(cur);
+    img.alt = '第 ' + cur + ' 頁：' + titles[cur - 1];
+    counter.textContent = cur + ' / ' + total;
+    caption.textContent = titles[cur - 1];
+    prevBtn.disabled = cur === 1;
+    nextBtn.disabled = cur === total;
+    if (push !== false) history.replaceState(null, '', '#' + cur);
+    preload(cur + 1); preload(cur - 1);
+  }
+
+  prevBtn.addEventListener('click', function () { show(cur - 1); });
+  nextBtn.addEventListener('click', function () { show(cur + 1); });
+  frame.querySelector('.hit.prev').addEventListener('click', function () { show(cur - 1); });
+  frame.querySelector('.hit.next').addEventListener('click', function () { show(cur + 1); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest && e.target.closest('input, textarea')) return;
+    if (e.key === 'ArrowLeft' || e.key === 'PageUp') { show(cur - 1); e.preventDefault(); }
+    else if (e.key === 'ArrowRight' || e.key === 'PageDown') { show(cur + 1); e.preventDefault(); }
+  });
+
+  var x0 = null;
+  frame.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  frame.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+    x0 = null;
+  });
+
+  var fs = document.getElementById('fs');
+  if (frame.requestFullscreen) {
+    fs.addEventListener('click', function () {
+      if (document.fullscreenElement) document.exitFullscreen(); else frame.requestFullscreen();
+    });
+  } else { fs.hidden = true; }
+
+  items.forEach(function (li, i) {
+    var a = document.createElement('a');
+    a.href = '#' + (i + 1); a.className = 'jump'; a.textContent = '看這頁投影片 ↑';
+    a.addEventListener('click', function (e) {
+      e.preventDefault(); show(i + 1); frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    li.appendChild(document.createTextNode(' ')); li.appendChild(a);
+  });
+
+  var h = parseInt(location.hash.slice(1), 10);
+  show(h >= 1 && h <= total ? h : 1, false);
+})();
+</script>
+</body>
+</html>
